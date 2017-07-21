@@ -1,4 +1,5 @@
 <?php
+//已更改 博
 include 'commom.php';
 //var_dump($_POST);
 if($_POST['send']){
