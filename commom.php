@@ -1,5 +1,6 @@
 <?php
-//开启session
+//1111
+//开启session 
 session_start();
 //错误处理
 error_reporting(E_ALL^E_NOTICE^E_STRICT);
