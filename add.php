@@ -1,5 +1,5 @@
 <?php
-//已更改 博
+//已更改 博546456456456456
 include 'commom.php';
 //var_dump($_POST);
 if($_POST['send']){
