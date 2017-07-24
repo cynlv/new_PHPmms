@@ -1,5 +1,6 @@
 <?php
 include 'commom.php';
+include "checkLogin.php";
 if($_GET['id']){  //如果id为真的话就不跳转
 	$sql="delete from member where id=".$_GET["id"];
 	//echo $sql;

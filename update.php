@@ -1,5 +1,6 @@
 <?php
 include 'commom.php';
+include "checkLogin.php";
 //如果没有id传递，跳转到首页
 if($_GET['id']){
 	$sql="select * from member where id=".$_GET['id'];

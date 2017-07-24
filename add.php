@@ -1,5 +1,6 @@
 <?php
 include 'commom.php';
+include "checkLogin.php";
 //var_dump($_POST);
 if($_POST['send']){
 	$searchSql="select * from member where username='".$_POST['username']."'";

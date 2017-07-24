@@ -1,6 +1,23 @@
 <?php
+
 //把包含的commom的文件包含进来
 include 'commom.php';
+include "checkLogin.php";
+/* echo "<pre>";
+var_dump($_SESSION);
+var_dump($_COOKIE);
+echo "</pre>"; */
+//验证管理员是否登录，未登录跳转到登录界面
+/* if(!$_SESSION['admin']){
+	header('location:login.php');
+}else {
+	echo $_SESSION["aimin"]->username."登录，";
+	echo "<a href='getall.php?action=logout'>注销</a>";
+}
+if($_GET['action']=='logout'){
+	unset($_SESSION['admin']);
+	header('location:login.php');
+} */
 //总记录数
 $total=$pdo->query("select * from member")->rowCount();
 //echo $total;  //查看是否能获取总记录数
